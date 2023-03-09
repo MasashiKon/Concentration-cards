@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz-page.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="matching-game.js" defer></script>
+    <title>Concentration</title>
+</head>
+<body>
+    <h1 id="game-regend">Concentration</h1>
+    <div id="game-container">
+        <div id="play-field"></div>
+        <div id="start-timebar">
+            <button id="startBtn">Start</button>
+            <div id="timebar"></div>
+            <div id="numOfAnimalsWrapper">
+                <div>Difficulty</div>
+                <input id="numOfAnimals" type="range" max="10" min="2" value="5">
+            </div>
+            
+            <fieldset id="backPattern">
+                <div>
+                    <input type="radio" id="camera" name="pattern" value="1" checked>
+                    <label for="camera">Camera</label>
+                </div>
+                <div>
+                    <input type="radio" id="tree" name="pattern" value="2">
+                    <label for="tree">Tree</label>
+                </div>
+            </fieldset>
+        </div>
+        <div id="matched-cards-field"></div>
+    </div>
+    <br>
+
+</body>
+</html>
